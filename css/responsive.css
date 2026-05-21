@@ -1,0 +1,165 @@
+/* ============================================
+   RESPONSIVE STYLES
+   Breakpoints: 320, 768, 1024, 1440
+   ============================================ */
+
+/* --- Tablet & Below (768px) --- */
+@media (max-width: 768px) {
+  :root {
+    --space-xl: 3rem;
+    --space-2xl: 5rem;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* Navbar */
+  .navbar {
+    top: 12px;
+    width: calc(100% - 24px);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .nav-socials {
+    display: none;
+  }
+
+  .nav-center {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 0.8rem;
+    padding: 6px 14px;
+  }
+
+  /* Hero — centered, editorial but mobile-friendly */
+  .hero {
+    padding-top: var(--nav-height);
+    justify-content: center;
+  }
+
+  .hero > .container {
+    padding-bottom: 100px; /* space for absolute bottom strip */
+  }
+
+  /* Name stays large on mobile — it's the statement */
+  .hero-name {
+    font-size: clamp(3.5rem, 14vw, 6rem);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-role {
+    font-size: 0.6rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-tagline {
+    font-size: clamp(0.9rem, 3.5vw, 1.1rem);
+  }
+
+  .hero-bottom {
+    left: 20px;
+    right: 20px;
+    bottom: var(--space-lg);
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+
+  /* Marquee — faster on mobile */
+  .marquee-track {
+    animation-duration: 18s;
+  }
+
+  /* Certs — 2 columns on tablet */
+  .certs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Projects Grid */
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-preview-img {
+    display: none; /* hover previews off on touch */
+  }
+
+  /* Tech Stack */
+  .tech-categories {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md);
+  }
+
+  /* Footer */
+  .footer-content {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-md);
+  }
+
+  .footer-name {
+    font-size: 2rem;
+  }
+}
+
+/* --- Mobile Small (480px) --- */
+@media (max-width: 480px) {
+  .hero-name {
+    font-size: clamp(2.8rem, 13vw, 4.5rem);
+    line-height: 0.9;
+  }
+
+  .tech-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certs-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-center {
+    padding: 6px 4px;
+  }
+
+  .nav-link {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+
+  /* Pre-footer */
+  .pre-footer-text {
+    font-size: 1rem;
+  }
+}
+
+/* --- Large screens (1440px+) --- */
+@media (min-width: 1440px) {
+  :root {
+    --max-width: 1300px;
+  }
+}
+
+/* --- Reduce motion preference --- */
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track { animation: none; }
+  .scroll-line::after { animation: none; }
+  .status-dot,
+  .status-dot::before { animation: none; }
+  .hero-word { transform: none; }
+}

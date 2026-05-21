@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Samridhi Gupta</title>
+  <meta name="description" content="A collection of AI-powered applications, full-stack projects, and intelligent systems built by Samridhi Gupta.">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cursor.css">
+  <link rel="stylesheet" href="css/welcome.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Welcome Animation Overlay -->
+  <div id="welcome-overlay" class="welcome-overlay">
+    <div class="welcome-name">
+      <span class="char">S</span><span class="char">a</span><span class="char">m</span><span class="char">r</span><span class="char">i</span><span class="char">d</span><span class="char">h</span><span class="char">i</span>
+      <span class="char">&nbsp;</span>
+      <span class="char">G</span><span class="char">u</span><span class="char">p</span><span class="char">t</span><span class="char">a</span>
+    </div>
+    <div class="welcome-tagline">probably debugging something right now.</div>
+    <div class="welcome-line"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" id="nav-brand-trigger" class="nav-brand">
+      <span class="nav-brand-name">Samridhi Gupta</span>
+      <span class="nav-brand-title">AI Engineer</span>
+    </a>
+    <div class="nav-center" data-magnetic="0.2">
+      <a href="projects.html" class="nav-link active">Projects</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="assets/SAMRIDHI_GUPTA_Resume.pdf" class="nav-link" target="_blank">Resume</a>
+    </div>
+    <div class="nav-socials">
+      <a href="https://github.com/SamridhiiiGupta" target="_blank" rel="noopener" class="nav-social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        <span>GitHub</span><span class="arrow">↗</span>
+      </a>
+      <a href="https://www.linkedin.com/in/samridhiii-gupta/" target="_blank" rel="noopener" class="nav-social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <span>LinkedIn</span><span class="arrow">↗</span>
+      </a>
+    </div>
+  </nav>
+
+  <!-- Floating Preview Image -->
+  <div id="project-preview" class="project-preview-image">
+    <img src="" alt="Project preview">
+  </div>
+
+  <!-- Main Content -->
+  <main class="projects-page container">
+
+    <!-- ── Projects Opening Headline ─────────────── -->
+    <div class="projects-hero">
+      <div class="projects-hero-label">
+        <span class="projects-hero-dot"></span>
+        MY PROJECTS
+      </div>
+      <h1 class="projects-hero-title">
+        <span class="projects-title-serif">A curated journey of ideas brought to life.</span><br>
+        <span class="projects-title-serif">Each project captures a moment where curiosity</span><br>
+        <span class="projects-title-serif">met execution — and turned into </span><span class="projects-title-italic">something real.</span>
+      </h1>
+      <!-- Glow orb behind the headline -->
+    </div>
+
+    <div class="projects-page-list">
+
+      <!-- MailForge -->
+      <a href="https://mailforge-ai-powered-cold-email-gen-lake.vercel.app/" target="_blank" rel="noopener"
+         class="project-full-card"
+         data-image="assets/images/projects/mailforge.png">
+        <div class="project-full-header">
+          <h2 class="project-full-name">MailForge</h2>
+          <span class="project-full-arrow">→</span>
+        </div>
+        <p class="project-full-info">AI / RAG · 2026 — AI-powered cold email generator using LLaMA 3.1, LangChain, and ChromaDB vector store with Groq-accelerated inference.</p>
+        <div class="project-full-tags">
+          <span class="project-full-tag">FastAPI</span>
+          <span class="project-full-tag">LangChain</span>
+          <span class="project-full-tag">LLaMA 3.1</span>
+          <span class="project-full-tag">ChromaDB</span>
+          <span class="project-full-tag">React</span>
+          <span class="project-full-tag">Groq API</span>
+        </div>
+        <div class="project-full-links" onclick="event.stopPropagation()">
+          <a href="https://mailforge-ai-powered-cold-email-gen-lake.vercel.app/" target="_blank" class="project-full-link">Live ↗</a>
+          <a href="https://github.com/SamridhiiiGupta/MailForge--AI_Powered_Cold_Email_Generator" target="_blank" class="project-full-link">GitHub ↗</a>
+        </div>
+      </a>
+
+      <!-- Recallio -->
+      <a href="https://recallio-designed-for-perfect-recal-seven.vercel.app/" target="_blank" rel="noopener"
+         class="project-full-card"
+         data-image="assets/images/projects/recallio.png">
+        <div class="project-full-header">
+          <h2 class="project-full-name">Recallio</h2>
+          <span class="project-full-arrow">→</span>
+        </div>
+        <p class="project-full-info">AI / Full-Stack · 2025 — Spaced-repetition learning platform with SM-2 algorithm, NLP flashcard generation, and retention analytics.</p>
+        <div class="project-full-tags">
+          <span class="project-full-tag">FastAPI</span>
+          <span class="project-full-tag">React</span>
+          <span class="project-full-tag">PostgreSQL</span>
+          <span class="project-full-tag">Groq</span>
+          <span class="project-full-tag">NLP</span>
+        </div>
+        <div class="project-full-links" onclick="event.stopPropagation()">
+          <a href="https://recallio-designed-for-perfect-recal-seven.vercel.app/" target="_blank" class="project-full-link">Live ↗</a>
+          <a href="https://github.com/SamridhiiiGupta/Recallio--Designed_for_perfect_recall" target="_blank" class="project-full-link">GitHub ↗</a>
+        </div>
+      </a>
+
+      <!-- ExoHabitAI -->
+      <a href="https://b13-exohabitai-samridhigupta.onrender.com/" target="_blank" rel="noopener"
+         class="project-full-card"
+         data-image="assets/images/projects/exohabitai.png">
+        <div class="project-full-header">
+          <h2 class="project-full-name">ExoHabitAI</h2>
+          <span class="project-full-arrow">→</span>
+        </div>
+        <p class="project-full-info">ML / Data Science · 2026 — Exoplanet habitability predictor using 39K+ NASA records, physics-based feature engineering, and XGBoost with 97% accuracy.</p>
+        <div class="project-full-tags">
+          <span class="project-full-tag">Python</span>
+          <span class="project-full-tag">XGBoost</span>
+          <span class="project-full-tag">Flask</span>
+          <span class="project-full-tag">scikit-learn</span>
+          <span class="project-full-tag">NASA Data</span>
+        </div>
+        <div class="project-full-links" onclick="event.stopPropagation()">
+          <a href="https://b13-exohabitai-samridhigupta.onrender.com/" target="_blank" class="project-full-link">Live ↗</a>
+          <a href="https://github.com/SamridhiiiGupta/ExoHabitAI" target="_blank" class="project-full-link">GitHub ↗</a>
+        </div>
+      </a>
+
+      <!-- Snip -->
+      <a href="https://snip-short-links-that-work-5m8t.onrender.com/" target="_blank" rel="noopener"
+         class="project-full-card"
+         data-image="assets/images/projects/snip.png">
+        <div class="project-full-header">
+          <h2 class="project-full-name">Snip</h2>
+          <span class="project-full-arrow">→</span>
+        </div>
+        <p class="project-full-info">Full-Stack · 2026 — Production URL shortener with real-time click analytics, QR codes, custom aliases, and auto-expiry controls.</p>
+        <div class="project-full-tags">
+          <span class="project-full-tag">Node.js</span>
+          <span class="project-full-tag">React</span>
+          <span class="project-full-tag">SQLite</span>
+          <span class="project-full-tag">Express</span>
+        </div>
+        <div class="project-full-links" onclick="event.stopPropagation()">
+          <a href="https://snip-short-links-that-work-5m8t.onrender.com/" target="_blank" class="project-full-link">Live ↗</a>
+          <a href="https://github.com/SamridhiiiGupta/SNIP--Short_links_that_work" target="_blank" class="project-full-link">GitHub ↗</a>
+        </div>
+      </a>
+
+      <!-- Orbit -->
+      <a href="https://orbit-production-76b4.up.railway.app/" target="_blank" rel="noopener"
+         class="project-full-card"
+         data-image="assets/images/projects/orbit.png">
+        <div class="project-full-header">
+          <h2 class="project-full-name">Orbit</h2>
+          <span class="project-full-arrow">→</span>
+        </div>
+        <p class="project-full-info">Full-Stack · 2026 — Team task manager with role-based access control, JWT authentication, and real-time dashboards.</p>
+        <div class="project-full-tags">
+          <span class="project-full-tag">React</span>
+          <span class="project-full-tag">Node.js</span>
+          <span class="project-full-tag">Express</span>
+          <span class="project-full-tag">Prisma</span>
+          <span class="project-full-tag">PostgreSQL</span>
+        </div>
+        <div class="project-full-links" onclick="event.stopPropagation()">
+          <a href="https://orbit-production-76b4.up.railway.app/" target="_blank" class="project-full-link">Live ↗</a>
+          <a href="https://github.com/SamridhiiiGupta/Orbit" target="_blank" class="project-full-link">GitHub ↗</a>
+        </div>
+      </a>
+
+      <!-- BrieflyAI -->
+      <a href="https://brieflyai-smart-news-summarization-and.onrender.com/" target="_blank" rel="noopener"
+         class="project-full-card"
+         data-image="assets/images/projects/brieflyai.png">
+        <div class="project-full-header">
+          <h2 class="project-full-name">BrieflyAI</h2>
+          <span class="project-full-arrow">→</span>
+        </div>
+        <p class="project-full-info">NLP · 2026 — News summarization and sentiment engine using TF-IDF scoring and VADER analysis. Zero paid APIs.</p>
+        <div class="project-full-tags">
+          <span class="project-full-tag">Flask</span>
+          <span class="project-full-tag">NLTK</span>
+          <span class="project-full-tag">BeautifulSoup</span>
+          <span class="project-full-tag">Python</span>
+        </div>
+        <div class="project-full-links" onclick="event.stopPropagation()">
+          <a href="https://brieflyai-smart-news-summarization-and.onrender.com/" target="_blank" class="project-full-link">Live ↗</a>
+          <a href="https://github.com/SamridhiiiGupta/BrieflyAI--Smart_News_Summarization_and_Sentiment_Engine" target="_blank" class="project-full-link">GitHub ↗</a>
+        </div>
+      </a>
+
+      <!-- ImagineAI -->
+      <a href="https://imagineai-transform-your-words-into.onrender.com/" target="_blank" rel="noopener"
+         class="project-full-card"
+         data-image="assets/images/projects/imagineai.png">
+        <div class="project-full-header">
+          <h2 class="project-full-name">ImagineAI</h2>
+          <span class="project-full-arrow">→</span>
+        </div>
+        <p class="project-full-info">GenAI · 2026 — Text-to-image generation platform using FLUX.1-schnell via HuggingFace Inference API.</p>
+        <div class="project-full-tags">
+          <span class="project-full-tag">Flask</span>
+          <span class="project-full-tag">HuggingFace</span>
+          <span class="project-full-tag">FLUX.1</span>
+          <span class="project-full-tag">Python</span>
+        </div>
+        <div class="project-full-links" onclick="event.stopPropagation()">
+          <a href="https://imagineai-transform-your-words-into.onrender.com/" target="_blank" class="project-full-link">Live ↗</a>
+          <a href="https://github.com/SamridhiiiGupta/ImagineAI-Transform-Your-Words-into-Visual-Masterpieces" target="_blank" class="project-full-link">GitHub ↗</a>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h4>Explore</h4>
+        <a href="about.html">About</a>
+        <a href="index.html">Home</a>
+        <a href="assets/SAMRIDHI_GUPTA_Resume.pdf" target="_blank">Resume</a>
+      </div>
+      <div class="footer-column">
+        <h4>Socials</h4>
+        <a href="https://www.linkedin.com/in/samridhiii-gupta/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/SamridhiiiGupta" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:samridhiii.guptaa@gmail.com">Email</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>
+        <div class="footer-name">SAMRIDHI GUPTA</div>
+        <div class="footer-tagline">code. chaos. creativity.</div>
+      </div>
+      <div class="footer-copyright">© 2024–2026 All Rights Reserved</div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.45/bundled/lenis.min.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/welcome.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+
+  <script>
+    // Spotlight on project full cards
+    document.querySelectorAll('.project-full-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const r = card.getBoundingClientRect();
+        card.style.setProperty('--mouse-x', `${e.clientX - r.left}px`);
+        card.style.setProperty('--mouse-y', `${e.clientY - r.top}px`);
+      });
+    });
+
+    // Hero headline + cards entrance animation
+    document.addEventListener('DOMContentLoaded', () => {
+      if (typeof gsap !== 'undefined') {
+        // Hero title
+        const tl = gsap.timeline({ delay: 0.2, defaults: { ease: 'power3.out' } });
+        tl.from('.projects-hero-label',   { y: 20, opacity: 0, duration: 0.7 })
+          .from('.projects-title-serif',  { y: 30, opacity: 0, duration: 0.9, stagger: 0.06 }, '-=0.4')
+          .from('.projects-title-italic', { y: 20, opacity: 0, duration: 0.8 }, '-=0.5');
+
+        // Project cards — stagger in as you scroll
+        if (typeof ScrollTrigger !== 'undefined') {
+          gsap.registerPlugin(ScrollTrigger);
+          gsap.utils.toArray('.project-full-card').forEach((card, i) => {
+            gsap.from(card, {
+              scrollTrigger: { trigger: card, start: 'top 88%', once: true },
+              y: 32, opacity: 0,
+              duration: 0.75, delay: i < 3 ? i * 0.06 : 0,
+              ease: 'power3.out',
+            });
+          });
+        }
+      }
+    });
+  </script>
+</body>
+</html>
