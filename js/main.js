@@ -239,29 +239,15 @@ function initCursorTargets() {
 function initProjectPreviews() {
   if (typeof gsap === 'undefined') return;
 
-  // Projects page — auto-generate preview imgs from data-image attribute
-  document.querySelectorAll('.project-full-card[data-image]').forEach(card => {
-    if (card.querySelector('.project-preview-img')) return;
-    const img = document.createElement('img');
-    img.className = 'project-preview-img';
-    img.src     = card.dataset.image;
-    img.alt     = 'Project preview';
-    img.loading = 'lazy';
-    card.appendChild(img);
-    card.setAttribute('data-preview', '');
-  });
-
-  // Bind hover preview to ALL cards that have data-preview (home + projects page)
-  document.querySelectorAll('[data-preview]').forEach(card => {
+  // Home page compact cards only — projects page uses projects.js global preview
+  document.querySelectorAll('.project-card[data-preview]').forEach(card => {
     const preview = card.querySelector('.project-preview-img');
     if (!preview) return;
 
-    // Explicitly set starting state — anchored to top-left of card
     gsap.set(preview, { x: 0, y: 0, opacity: 0, scale: 0.88 });
 
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
-      // Clamp so preview stays fully within card bounds
       const x = Math.max(0, Math.min(
         e.clientX - rect.left  - preview.offsetWidth  / 2,
         rect.width  - preview.offsetWidth
