@@ -420,20 +420,23 @@
   z-index: 1;
 }
 
-/* Image preview (Phase 5 — add screenshots to assets/images/projects/) */
+/* Image preview — fixed origin at card top-left so GSAP translate works correctly */
 .project-preview-img {
   position: absolute;
+  top: 0;                             /* FIX: anchor to card top-left, not content flow */
+  left: 0;
   width: 200px;
   height: 130px;
   object-fit: cover;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1px solid rgba(255,255,255,0.08);
   pointer-events: none;
   z-index: 5;
   opacity: 0;
   transform: scale(0.88);
   will-change: transform, opacity;
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+  loading: lazy;                      /* browser hint — not loaded until needed */
 }
 
 /* More projects link */

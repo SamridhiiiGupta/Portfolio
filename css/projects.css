@@ -240,3 +240,14 @@
     display: block;
   }
 }
+
+/* ─── PROJECT PREVIEW IMAGE (full cards) ────── */
+/* Larger than home cards since full cards are wider */
+.project-full-card .project-preview-img {
+  width: 280px;
+  height: 180px;
+  border-radius: 10px;
+  box-shadow:
+    0 24px 60px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(232, 160, 191, 0.08);
+}

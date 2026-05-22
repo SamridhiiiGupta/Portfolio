@@ -239,27 +239,46 @@ function initCursorTargets() {
 function initProjectPreviews() {
   if (typeof gsap === 'undefined') return;
 
-  document.querySelectorAll('.project-card[data-preview]').forEach(card => {
+  // Projects page — auto-generate preview imgs from data-image attribute
+  document.querySelectorAll('.project-full-card[data-image]').forEach(card => {
+    if (card.querySelector('.project-preview-img')) return;
+    const img = document.createElement('img');
+    img.className = 'project-preview-img';
+    img.src     = card.dataset.image;
+    img.alt     = 'Project preview';
+    img.loading = 'lazy';
+    card.appendChild(img);
+    card.setAttribute('data-preview', '');
+  });
+
+  // Bind hover preview to ALL cards that have data-preview (home + projects page)
+  document.querySelectorAll('[data-preview]').forEach(card => {
     const preview = card.querySelector('.project-preview-img');
     if (!preview) return;
 
+    // Explicitly set starting state — anchored to top-left of card
+    gsap.set(preview, { x: 0, y: 0, opacity: 0, scale: 0.88 });
+
     card.addEventListener('mousemove', (e) => {
       const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      gsap.to(preview, {
-        x: x - preview.offsetWidth  / 2,
-        y: y - preview.offsetHeight / 2,
-        duration: 0.4, ease: 'power2.out',
-      });
+      // Clamp so preview stays fully within card bounds
+      const x = Math.max(0, Math.min(
+        e.clientX - rect.left  - preview.offsetWidth  / 2,
+        rect.width  - preview.offsetWidth
+      ));
+      const y = Math.max(0, Math.min(
+        e.clientY - rect.top   - preview.offsetHeight / 2,
+        rect.height - preview.offsetHeight
+      ));
+      gsap.to(preview, { x, y, duration: 0.35, ease: 'power2.out', overwrite: 'auto' });
     });
 
     card.addEventListener('mouseenter', () => {
-      gsap.to(preview, { opacity: 1, scale: 1, duration: 0.35, ease: 'power2.out' });
+      gsap.to(preview, { opacity: 1, scale: 1, duration: 0.3, ease: 'power2.out' });
     });
 
     card.addEventListener('mouseleave', () => {
-      gsap.to(preview, { opacity: 0, scale: 0.88, duration: 0.3, ease: 'power2.in' });
+      gsap.to(preview, { opacity: 0, scale: 0.88, duration: 0.25, ease: 'power2.in' });
     });
   });
 }
