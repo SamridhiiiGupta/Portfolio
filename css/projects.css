@@ -63,7 +63,7 @@
 .projects-page-list {
   display: flex;
   flex-direction: column;
-  gap: 8px;                           /* small breathing room between cards */
+  gap: 4px;                           /* bohot halka sa gap */
   background: transparent;
   border: none;
   border-radius: var(--radius);
@@ -72,10 +72,10 @@
 
 .project-full-card {
   background: var(--bg-primary);
-  padding: 2rem 2.5rem;
+  padding: 2.8rem 3rem;              /* bigger blocks */
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1.1rem;
   transition: background 0.3s ease;
   cursor: none;
   position: relative;
@@ -118,7 +118,7 @@
 
 .project-full-name {
   font-family: var(--font-heading);
-  font-size: clamp(1.3rem, 2.5vw, 1.9rem);   /* smaller than before */
+  font-size: clamp(1.6rem, 3vw, 2.4rem);   /* bigger */
   font-weight: 600;
   letter-spacing: -0.02em;
   color: var(--text-primary);
@@ -130,12 +130,12 @@
 }
 
 .project-full-arrow {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   color: var(--text-dim);
   transition: transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
               color 0.25s ease;
   flex-shrink: 0;
-  margin-top: 4px;
+  margin-top: 6px;
   position: relative;
   z-index: 1;
 }
@@ -146,9 +146,9 @@
 }
 
 .project-full-info {
-  font-size: 0.85rem;
+  font-size: 0.92rem;                 /* slightly bigger */
   color: var(--text-muted);
-  line-height: 1.55;
+  line-height: 1.6;
   position: relative;
   z-index: 1;
 }
@@ -162,12 +162,12 @@
 }
 
 .project-full-tag {
-  font-size: 0.68rem;
+  font-size: 0.72rem;
   font-weight: 500;
   letter-spacing: 0.05em;
   color: var(--text-muted);
   background: rgba(255, 255, 255, 0.05);
-  padding: 3px 12px;
+  padding: 4px 14px;
   border-radius: 50px;
   border: 1px solid var(--border);
   transition: background 0.25s ease, border-color 0.25s ease;
@@ -178,15 +178,21 @@
   border-color: rgba(232, 160, 191, 0.18);
 }
 
+/* Links — part of the card, same background, no separate box */
 .project-full-links {
   display: flex;
   gap: 16px;
   position: relative;
   z-index: 1;
+  margin-top: 0.4rem;
+  padding-top: 0;
+  background: transparent;           /* no separate background */
+  border: none;                      /* no border */
 }
 
 .project-full-link {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  font-weight: 500;
   color: var(--accent);
   text-decoration: none;
   transition: opacity 0.2s ease;
