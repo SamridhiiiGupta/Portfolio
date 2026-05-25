@@ -72,13 +72,11 @@ The portfolio features a full editorial design language — from the letter-by-l
 
 ## 📸 Screenshots
 
-> 💡 **Note:** Add your screenshots in a `/screenshots` folder and update the paths below.
-
 <br />
 
 ### 🏠 Hero — Home Page
 
-![Hero Section](screenshots/hero.png)
+![Hero Section](assets/screenshots/hero.png)
 
 > The opening screen greets visitors with a full-screen welcome animation — each character of the name animates in letter-by-letter before dissolving into the main hero. The name is typeset in a bold serif/cursive mix with an editorial role label above and a status indicator below.
 
@@ -86,7 +84,7 @@ The portfolio features a full editorial design language — from the letter-by-l
 
 ### 🚀 Selected Projects
 
-![Projects Grid](screenshots/projects.png)
+![Projects Grid](assets/screenshots/projects.png)
 
 > Four featured projects displayed in an asymmetric card grid. Each card features a live project preview image, tech stack tags, year label, and a mouse-following radial spotlight effect. Clicking navigates to the deployed project.
 
@@ -94,7 +92,9 @@ The portfolio features a full editorial design language — from the letter-by-l
 
 ### 🛠️ Tech Stack
 
-![Tech Stack](screenshots/techstack.png)
+![Tech Stack](assets/screenshots/techstack.png)
+<br>
+![Certifications](assets/screenshots/certifications.png)
 
 > A categorized icon grid spanning AI/ML, LLM/GenAI, Backend, Frontend, Cloud & DevOps, and Databases. Each icon has a custom tooltip that appears on hover. The section is preceded by a seamlessly looping infinite marquee of technologies.
 
@@ -102,7 +102,7 @@ The portfolio features a full editorial design language — from the letter-by-l
 
 ### 📅 Experience & Certifications
 
-![Experience Timeline](screenshots/experience.png)
+![Experience Timeline](assets/screenshots/experience.png)
 
 > A clean vertical timeline showcasing internship roles with company, date, and description. Below it, a 3-column certification grid features 9 verified credentials from AWS, Google Cloud, Microsoft, Adobe, Mastercard, and Hewlett Packard — each linking directly to its certificate.
 
@@ -110,7 +110,7 @@ The portfolio features a full editorial design language — from the letter-by-l
 
 ### 👤 About Page
 
-![About Page](screenshots/about.png)
+![About Page](assets/screenshots/about.png)
 
 > An editorial storytelling page that alternates between full-bleed imagery and personal narrative text. Features scroll-driven GSAP reveal animations, a dramatic closing statement, and a writing style that balances technical credibility with genuine personality.
 
