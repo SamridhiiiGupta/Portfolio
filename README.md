@@ -93,8 +93,6 @@ The portfolio features a full editorial design language — from the letter-by-l
 ### 🛠️ Tech Stack
 
 ![Tech Stack](assets/screenshots/techstack.png)
-<br>
-![Certifications](assets/screenshots/certifications.png)
 
 > A categorized icon grid spanning AI/ML, LLM/GenAI, Backend, Frontend, Cloud & DevOps, and Databases. Each icon has a custom tooltip that appears on hover. The section is preceded by a seamlessly looping infinite marquee of technologies.
 
@@ -103,6 +101,8 @@ The portfolio features a full editorial design language — from the letter-by-l
 ### 📅 Experience & Certifications
 
 ![Experience Timeline](assets/screenshots/experience.png)
+<br>
+![Certifications](assets/screenshots/certifications.png)
 
 > A clean vertical timeline showcasing internship roles with company, date, and description. Below it, a 3-column certification grid features 9 verified credentials from AWS, Google Cloud, Microsoft, Adobe, Mastercard, and Hewlett Packard — each linking directly to its certificate.
 
